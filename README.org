@@ -1,0 +1,17 @@
+* Generator lib from DB schema.
+
+DB テスト用ライブラリ & DB テスト用 generator ライブラリ
+
+** DB テスト用ライブラリ
+*** ターゲット
+**** 本物の DB を使ったモデルやサービスのテスト
+**** Scala/Java
+*** コンセプト
+**** テスト前とテスト後の DB の diff を取り、その diff を検証することでテストを行います
+**** DB への事前データ投入を容易にするため、 DTO から DB へデータを投入できるようにします
+**** diff の検証を容易にするため、 DTO から expected な diff データを生成できるようにします
+**** dbunit と仲良くします
+dbunit でできることは dbunit に任せます
+** DB テスト用 generator ライブラリ
+*** DB テストで使用する DTO を生成するためのライブラリです
+ 
