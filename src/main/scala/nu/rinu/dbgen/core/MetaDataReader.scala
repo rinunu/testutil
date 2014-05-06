@@ -1,7 +1,6 @@
 package nu.rinu.dbgen.core
 
 import java.sql.{Connection, DatabaseMetaData, ResultSet}
-import nu.rinu.dbgen.core.Column
 
 
 /**

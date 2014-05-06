@@ -1,7 +1,5 @@
 package nu.rinu.dbgen.core
 
-import nu.rinu.dbgen.core.SqlType
-
 case class Column(
                    name: String,
                    dataType: SqlType,

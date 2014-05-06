@@ -1,17 +1,12 @@
 package nu.rinu.dbgen.util
 
 import nu.rinu.dbgen.core.{MetaDataReader, Table}
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource
 import nu.rinu.sdb.Implicits._
+import javax.sql.DataSource
 
 object SimpleRunner {
-  def apply(url: String,
-            user: String,
-            password: String)(f: Seq[Table] => Any) {
-    val dataSource = new MysqlDataSource()
-    dataSource.setUrl(url)
-    dataSource.setUser(user)
-    dataSource.setPassword(password)
+  def apply(dataSource: DataSource)
+           (f: Seq[Table] => Any) {
 
     dataSource.withConnection { con =>
       val tables = new MetaDataReader(con).read()

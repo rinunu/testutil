@@ -1,6 +1,6 @@
 scalaVersion := "2.10.2"
 
-name := "dbtest"
+name := "testutil"
 
 organization := "nu.rinu"
 
@@ -8,8 +8,8 @@ resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repos
 
 libraryDependencies ++= Seq(
   "com.google.guava" % "guava" % "14.0.1",
-  "nu.rinu" %% "sutil" % "0.0.9-SNAPSHOT",
-  "nu.rinu" %% "sdb" % "0.0.5-SNAPSHOT",
+  "nu.rinu" %% "sutil" % "0.0.9",
+  "nu.rinu" %% "sdb" % "0.0.5",
   "org.json4s" %% "json4s-native" % "3.1.0",
   "org.dbunit" % "dbunit" % "2.5.0",
   "junit" % "junit" % "4.11" % "test",
