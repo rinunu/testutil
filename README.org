@@ -1,4 +1,4 @@
-* testuitl
+* testutil
 
 DB テスト用ライブラリ & DB テスト用 generator ライブラリ
 
